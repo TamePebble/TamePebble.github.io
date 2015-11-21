@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+  <title></title>
+  <script type="text/javascript" src="./slate/js/slate.js"></script>
+  <link rel="stylesheet" href="./slate/css/slate.css">
+  <link rel="stylesheet" href="./css/tamegoro.css">
+</head>
+<body>
+  <h1 class='title'>Very Simple Analog Configuration</h1>
+  <form id="main-form">
+
+    <div class="item-container">
+      <div class="item-container-content">
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="item-container-header">Colors</div>
+      <div class="item-container-content">
+        <label class="item">
+          Hourhand
+          <input type="text" class="item-color item-color-normal" name="color-hourhand" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Minutehand
+          <input type="text" class="item-color item-color-normal" name="color-minutehand" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Secondhand
+          <input type="text" class="item-color item-color-normal" name="color-secondhand" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Center Pin
+          <input type="text" class="item-color item-color-normal" name="color-centerpin" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Background
+          <input type="text" class="item-color item-color-normal" name="color-background" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Number
+          <input type="text" class="item-color item-color-normal" name="color-number" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Index
+          <input type="text" class="item-color item-color-normal" name="color-index" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Date
+          <input type="text" class="item-color item-color-normal" name="color-date" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Shadow
+          <input type="text" class="item-color item-color-normal" name="color-shadow" value="0xFFFFFF">
+        </label>
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="item-container-header">Options</div>
+      <div class="item-container-content">
+        <label class="item">
+          Show secondhand
+<!--          <input type="checkbox" class="item-toggle" name="toggle-show-secondhand" checked> -->
+          <input type="checkbox" class="item-toggle" name="toggle-show-secondhand">
+        </label>
+        <label class="item">
+          Show date
+          <input type="checkbox" class="item-toggle" name="toggle-show-date">
+        </label>
+        <label class="item">
+          Shadow effects
+          <input type="checkbox" class="item-toggle" name="toggle-shadow-effects">
+        </label>
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="button-container">
+        <input type="button" class="item-button" name="button-cancel" value="Cancel">
+        <input type="button" class="item-button" name="button-save" value="Save">
+      </div>
+    </div>
+
+  </form>
+
+</body>
+</html>
+
