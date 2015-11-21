@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
   <title></title>
-  <script type="text/javascript" src="./slate/js/slate.js"></script>
-  <link rel="stylesheet" href="./slate/css/slate.css">
+  <script type="text/javascript" src="./slate/js/slate.min.js"></script>
+  <link rel="stylesheet" href="./slate/css/slate.min.css">
   <link rel="stylesheet" href="./css/tamegoro.css">
 </head>
 <body>
@@ -22,11 +22,11 @@
       <div class="item-container-content">
         <label class="item">
           Nomal
-          <input type="radio" class="item-radio" name="radio-invert" value="nomal">
+          <input type="radio" class="item-radio" id="radio-invert" value="nomal">
         </label>
         <label class="item">
           Invert
-          <input type="radio" class="item-radio" name="radio-invert" value="invert">
+          <input type="radio" class="item-radio" id="radio-invert" value="invert">
         </label>
       </div>
     </div>
@@ -36,20 +36,20 @@
       <div class="item-container-content">
         <label class="item">
           Show secondhand
-<!--          <input type="checkbox" class="item-toggle" name="toggle-show-secondhand" checked> -->
-          <input type="checkbox" class="item-toggle" name="toggle-show-secondhand">
+<!--          <input type="checkbox" class="item-toggle" id="toggle-show-secondhand" checked> -->
+          <input type="checkbox" class="item-toggle" id="toggle-show-secondhand">
         </label>
         <label class="item">
           Show date
-          <input type="checkbox" class="item-toggle" name="toggle-show-date">
+          <input type="checkbox" class="item-toggle" id="toggle-show-date">
         </label>
       </div>
     </div>
 
     <div class="item-container">
       <div class="button-container">
-        <input type="button" class="item-button" name="button-cancel" value="CANCEL">
-        <input type="button" class="item-button" name="button-save" value="SAVE">
+        <input type="button" class="item-button" id="button-cancel" value="CANCEL">
+        <input type="button" class="item-button" id="button-save" value="SAVE">
       </div>
     </div>
 
