@@ -79,7 +79,6 @@ var buttonCancel = document.getElementById('button-cancel');
 buttonCancel.addEventListener('click', function() {
 
 //		console.log('Cancel');
-alert("Cancel");
 
 	// Set the return URL depending on the runtime environment
 	var return_to = getQueryParam('return_to', 'pebblejs://close#');
