@@ -1,60 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-  <title></title>
-  <script type="text/javascript" src="./slate/js/slate.min.js"></script>
-  <link rel="stylesheet" href="./slate/css/slate.min.css">
-  <link rel="stylesheet" href="./css/tamegoro.css">
-</head>
-<body>
-  <h1 class='title'>Very Simple Analog</h1>
-  <form id="main-form">
+<html>
 
-    <div class="item-container">
-      <div class="item-container-content">
-      </div>
-    </div>
+	<head>
 
-    <div class="item-container">
-      <div class="item-container-header">Color</div>
-      <div class="item-container-content">
-        <label class="item">
-          Nomal
-          <input type="radio" class="item-radio" id="radio-invert" name="radio-invert" value="nomal">
-        </label>
-        <label class="item">
-          Invert
-          <input type="radio" class="item-radio" id="radio-invert" name="radio-invert" value="invert">
-        </label>
-      </div>
-    </div>
+		<title>Very Simple Analog Configuration</title>
+		<link rel='stylesheet' type='text/css' href='./slate/css/slate.min.css'>
+		<script src='./slate/js/slate.min.js'></script>
+		<link rel='stylesheet' type='text/css' href='./css/tamegoro.css'>
 
-    <div class="item-container">
-      <div class="item-container-header">Options</div>
-      <div class="item-container-content">
-        <label class="item">
-          Show secondhand
-<!--          <input type="checkbox" class="item-toggle" id="toggle-show-secondhand" checked> -->
-          <input type="checkbox" class="item-toggle" id="toggle-show-secondhand">
-        </label>
-        <label class="item">
-          Show date
-          <input type="checkbox" class="item-toggle" id="toggle-show-date">
-        </label>
-      </div>
-    </div>
+	</head>
 
-    <div class="item-container">
-      <div class="button-container">
-        <input type="button" class="item-button" id="button-cancel" value="CANCEL">
-        <input type="button" class="item-button" id="button-save" value="SAVE">
-      </div>
-    </div>
+	<body>
 
-  </form>
+		<h1 class='title'>Very Simple Analog</h1>
 
-</body>
+		<div class="item-container">
+			<div class="item-container-content">
+			</div>
+		</div>
+	
+		<form id="main-form">
+	
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Color
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Nomal
+						<input type="radio" class="item-radio" id="radio-nomal" name="groupe-radio-color" checked>
+					</label>
+
+					<label class="item">
+						Invert
+						<input type="radio" class="item-radio" id="radio-invert" name="groupe-radio-color">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Items
+				</div>
+
+				<div class='item-container-content'>
+
+				<label class="item">
+					Show secondhand
+					<input type="checkbox" class="item-toggle" id="toggle-show-secondhand" checked>
+				</label>
+
+					<label class="item">
+						Show date
+						<input type="checkbox" class="item-toggle" id="toggle-show-date" checked>
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+	
+			<div class='item-container'>
+
+				<div class='button-container'>
+					<input id='button-save' type='button' class='item-button' value='SAVE'>
+				</div>
+
+			</div>
+
+		</form>
+	
+	</body>
+
+<script src='./js/VerySimpleAnalog_a.js'></script>
+
 </html>
 
