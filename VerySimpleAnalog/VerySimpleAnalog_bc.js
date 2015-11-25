@@ -1,5 +1,8 @@
 function getConfigData() {
 
+	var radioHandDiamond = document.getElementById('radio-hand-diamond');
+	var radioHandTrapezoid = document.getElementById('radio-hand-trapezoid');
+	var radioHandRectangle = document.getElementById('radio-hand-rectangle');
 	var colorHourhand = document.getElementById('color-hourhand');
 	var colorHourhandOutline = document.getElementById('color-hourhand-outline');
 	var colorMinutehand = document.getElementById('color-minutehand');
@@ -16,6 +19,9 @@ function getConfigData() {
 	var toggleShowDropShadow = document.getElementById('toggle-show-drop-shadow');
 
 	var options = {
+		'radio-hand-diamond': radioHandDiamond.checked,
+		'radio-hand-trapezoid': radioHandTrapezoid.checked,
+		'radio-hand-rectangle': radioHandRectangle.checked,
 		'color-hourhand': colorHourhand.value,
 		'color-hourhand-outline': colorHourhandOutline.value,
 		'color-minutehand': colorMinutehand.value,
@@ -34,6 +40,9 @@ function getConfigData() {
 
 	// Save for next launch
 	localStorage['flag_save'] = 1;
+	localStorage['radio-hand-diamond'] = options['radio-hand-diamond'];
+	localStorage['radio-hand-trapezoid'] = options['radio-hand-trapezoid'];
+	localStorage['radio-hand-rectangle'] = options['radio-hand-rectangle'];
 	localStorage['color-hourhand'] = options['color-hourhand'];
 	localStorage['color-hourhand-outline'] = options['color-hourhand-outline'];
 	localStorage['color-minutehand'] = options['color-minutehand'];
@@ -100,6 +109,9 @@ buttonSave.addEventListener('click', function() {
 
 (function() {
 
+	var radioHandDiamond = document.getElementById('radio-hand-diamond');
+	var radioHandTrapezoid = document.getElementById('radio-hand-trapezoid');
+	var radioHandRectangle = document.getElementById('radio-hand-rectangle');
 	var colorHourhand = document.getElementById('color-hourhand');
 	var colorHourhandOutline = document.getElementById('color-hourhand-outline');
 	var colorMinutehand = document.getElementById('color-minutehand');
@@ -117,6 +129,9 @@ buttonSave.addEventListener('click', function() {
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
+		radioHandDiamond.checked = JSON.parse(localStorage['radio-hand-diamond']);
+		radioHandTrapezoid.checked = JSON.parse(localStorage['radio-hand-trapezoid']);
+		radioHandRectangle.checked = JSON.parse(localStorage['radio-hand-rectangle']);
 		colorHourhand.value = localStorage['color-hourhand'];
 		colorHourhandOutline.value = localStorage['color-hourhand-outline'];
 		colorMinutehand.value = localStorage['color-minutehand'];
