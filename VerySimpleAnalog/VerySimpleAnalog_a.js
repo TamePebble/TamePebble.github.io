@@ -7,6 +7,7 @@ function getConfigData() {
 	var radioInvert = document.getElementById('radio-invert');
 	var toggleShowSecondhand = document.getElementById('toggle-show-secondhand');
 	var toggleShowDate = document.getElementById('toggle-show-date');
+	var timeShift = document.getElementById('time-shift');
 
 	var options = {
 		'radio-hand-diamond': radioHandDiamond.checked,
@@ -16,6 +17,7 @@ function getConfigData() {
 		'radio-invert': radioInvert.checked,
 		'toggle-show-secondhand': toggleShowSecondhand.checked,
 		'toggle-show-date': toggleShowDate.checked
+		'time-shift': timeShift.value,
 	};
 
 	// Save for next launch
@@ -27,6 +29,7 @@ function getConfigData() {
 	localStorage['radio-invert'] = options['radio-invert'];
 	localStorage['toggle-show-secondhand'] = options['toggle-show-secondhand'];
 	localStorage['toggle-show-date'] = options['toggle-show-date'];
+	localStorage['time-shift'] = options['time-shift'];
 
 //	console.log('Got options: ' + JSON.stringify(options));
 
@@ -86,6 +89,7 @@ buttonSave.addEventListener('click', function() {
 	var radioInvert = document.getElementById('radio-invert');
 	var toggleShowSecondhand = document.getElementById('toggle-show-secondhand');
 	var toggleShowDate = document.getElementById('toggle-show-date');
+	var timeShift = document.getElementById('time-shift');
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
@@ -96,6 +100,7 @@ buttonSave.addEventListener('click', function() {
 		radioInvert.checked = JSON.parse(localStorage['radio-invert']);
 		toggleShowSecondhand.checked = JSON.parse(localStorage['toggle-show-secondhand']);
 		toggleShowDate.checked = JSON.parse(localStorage['toggle-show-date']);
+		timeShift.value = localStorage['time-shift'];
 	}
 
 })();
