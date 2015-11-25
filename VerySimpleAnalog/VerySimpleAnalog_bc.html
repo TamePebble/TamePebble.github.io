@@ -4,9 +4,9 @@
 	<head>
 
 		<title>Very Simple Analog Configuration</title>
-		<link rel='stylesheet' type='text/css' href='./slate/css/slate.min.css'>
-		<script src='./slate/js/slate.min.js'></script>
-		<link rel='stylesheet' type='text/css' href='./css/tamegoro.css'>
+		<link rel='stylesheet' type='text/css' href='../slate/css/slate.min.css'>
+		<script src='../slate/js/slate.min.js'></script>
+		<link rel='stylesheet' type='text/css' href='../css/tamegoro.css'>
 
 	</head>
 
@@ -20,7 +20,37 @@
 		</div>
 	
 		<form id="main-form">
-	
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Hands
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						<img src="hand_diamond.png">
+						<input type="radio" class="item-radio" id="radio-hand-diamond" name="groupe-radio-hand" checked>
+					</label>
+
+					<label class="item">
+						<img src="hand_trapezoid.png">
+						<input type="radio" class="item-radio" id="radio-hand-trapezoid" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_rectangle.png">
+						<input type="radio" class="item-radio" id="radio-hand-rectangle" name="groupe-radio-hand">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
 			<div class='item-container'>
 
 				<div class='item-container-header'>
@@ -124,7 +154,7 @@
 	
 	</body>
 
-<script src='./js/VerySimpleAnalog_bc.js'></script>
+<script src='VerySimpleAnalog_bc.js'></script>
 
 </html>
 
