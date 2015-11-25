@@ -17,7 +17,6 @@ function getConfigData() {
 	var toggleShowSecondhand = document.getElementById('toggle-show-secondhand');
 	var toggleShowDate = document.getElementById('toggle-show-date');
 	var toggleShowDropShadow = document.getElementById('toggle-show-drop-shadow');
-	var timeShift = document.getElementById('time-shift');
 
 	var options = {
 		'radio-hand-diamond': radioHandDiamond.checked,
@@ -37,7 +36,6 @@ function getConfigData() {
 		'toggle-show-secondhand': toggleShowSecondhand.checked,
 		'toggle-show-date': toggleShowDate.checked,
 		'toggle-show-drop-shadow': toggleShowDropShadow.checked
-		'time-shift': timeShift.value,
 	};
 
 	// Save for next launch
@@ -59,7 +57,6 @@ function getConfigData() {
 	localStorage['toggle-show-secondhand'] = options['toggle-show-secondhand'];
 	localStorage['toggle-show-date'] = options['toggle-show-date'];
 	localStorage['toggle-show-drop-shadow'] = options['toggle-show-drop-shadow'];
-	localStorage['time-shift'] = options['time-shift'];
 
 	console.log('Got options: ' + JSON.stringify(options));
 
@@ -129,7 +126,6 @@ buttonSave.addEventListener('click', function() {
 	var toggleShowSecondhand = document.getElementById('toggle-show-secondhand');
 	var toggleShowDate = document.getElementById('toggle-show-date');
 	var toggleShowDropShadow = document.getElementById('toggle-show-drop-shadow');
-	var timeShift = document.getElementById('time-shift');
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
@@ -150,7 +146,6 @@ buttonSave.addEventListener('click', function() {
 		toggleShowSecondhand.checked = JSON.parse(localStorage['toggle-show-secondhand']);
 		toggleShowDate.checked = JSON.parse(localStorage['toggle-show-date']);
 		toggleShowDropShadow.checked = JSON.parse(localStorage['toggle-show-drop-shadow']);
-		timeShift.value = localStorage['time-shift'];
 	}
 
 })();
