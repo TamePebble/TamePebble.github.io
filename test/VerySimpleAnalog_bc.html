@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Very Simple Analog Configuration</title>
+		<link rel='stylesheet' type='text/css' href='../slate/css/slate.min.css'>
+		<script src='../slate/js/slate.min.js'></script>
+		<link rel='stylesheet' type='text/css' href='../css/tamegoro.css'>
+
+	</head>
+
+	<body>
+
+		<h1 class='title'>Very Simple Analog</h1>
+
+		<div class="item-container">
+			<div class="item-container-content">
+			</div>
+		</div>
+	
+		<form id="main-form">
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Hands
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						<img src="hand_diamond.png">
+						<input type="radio" class="item-radio" id="radio-hand-diamond" name="groupe-radio-hand" checked>
+					</label>
+
+					<label class="item">
+						<img src="hand_trapezoid.png">
+						<input type="radio" class="item-radio" id="radio-hand-trapezoid" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_pentagon.png">
+						<input type="radio" class="item-radio" id="radio-hand-pentagon" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_rectangle.png">
+						<input type="radio" class="item-radio" id="radio-hand-rectangle" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_round.png">
+						<input type="radio" class="item-radio" id="radio-hand-round" name="groupe-radio-hand">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Colors
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Hourhand
+						<input type="text" class="item-color item-color-normal" id="color-hourhand" value="0x000000">
+					</label>
+					<label class="item">
+						Hourhand outline
+						<input type="text" class="item-color item-color-normal" id="color-hourhand-outline" value="0xFFFFFF">
+					</label>
+					<label class="item">
+						Minutehand
+						<input type="text" class="item-color item-color-normal" id="color-minutehand" value="0x000000">
+					</label>
+					<label class="item">
+						Minutehand outline
+						<input type="text" class="item-color item-color-normal" id="color-minutehand-outline" value="0xFFFFFF">
+					</label>
+					<label class="item">
+						Secondhand
+						<input type="text" class="item-color item-color-normal" id="color-secondhand" value="0xFF0000">
+					</label>
+					<label class="item">
+						Center pin
+						<input type="text" class="item-color item-color-normal" id="color-centerpin" value="0xFFFF00">
+					</label>
+					<label class="item">
+						Background
+						<input type="text" class="item-color item-color-normal" id="color-background" value="0xFFFFFF">
+					</label>
+					<label class="item">
+						Number
+						<input type="text" class="item-color item-color-normal" id="color-number" value="0x000000">
+					</label>
+					<label class="item">
+						Index
+						<input type="text" class="item-color item-color-normal" id="color-index" value="0x000000">
+					</label>
+					<label class="item">
+						Date
+						<input type="text" class="item-color item-color-normal" id="color-date" value="0x000000">
+					</label>
+					<label class="item">
+						Drop shadow
+						<input type="text" class="item-color item-color-normal" id="color-drop-shadow" value="0xAAAAAA">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Items
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Show secondhand
+						<input type="checkbox" class="item-toggle" id="toggle-show-secondhand" checked>
+					</label>
+
+					<label class="item">
+						Show date
+						<input type="checkbox" class="item-toggle" id="toggle-show-date" checked>
+					</label>
+
+					<label class="item">
+						Show number
+						<input type="checkbox" class="item-toggle" id="toggle-show-number" checked>
+					</label>
+
+					<label class="item">
+						Show index
+						<input type="checkbox" class="item-toggle" id="toggle-show-index" checked>
+					</label>
+
+					<label class="item">
+						Show drop shadow
+						<input type="checkbox" class="item-toggle" id="toggle-show-drop-shadow" checked>
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+	
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Tap
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						None
+						<input type="radio" class="item-radio" id="radio-tap-none" name="groupe-tap" checked>
+					</label>
+
+					<label class="item">
+						Show digital watch
+						<input type="radio" class="item-radio" id="radio-tap-digital" name="groupe-tap">
+					</label>
+
+					<label class="item">
+						Flip watchface
+						<input type="radio" class="item-radio" id="radio-tap-flip" name="groupe-tap">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Options
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Time shift
+						<input type="time" class="item-time" id="time-shift" value="00:00">
+					</label>
+
+					<label class="item">
+						Reversal
+						<input type="checkbox" class="item-toggle" id="toggle-reversal">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='button-container'>
+					<input id='button-cancel' type='button' class='item-button' value='CANCEL'>
+					<input id='button-save' type='button' class='item-button' value='SAVE'>
+				</div>
+
+			</div>
+
+		</form>
+	
+	</body>
+
+<script src='VerySimpleAnalog_bc.js'></script>
+
+</html>
+
