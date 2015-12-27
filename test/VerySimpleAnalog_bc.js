@@ -200,7 +200,7 @@ buttonSave.addEventListener('click', function() {
 		radioTapFlip.checked = JSON.parse(localStorage['radio-tap-flip']);
 		timeShift.value = localStorage['time-shift'];
 		toggleReversal.checked = JSON.parse(localStorage['toggle-reversal']);
-		localStorage['toggle-bt-vibrate'] = options['toggle-bt-vibrate'];
+		toggleBTVibrate.checked = JSON.parse(localStorage['toggle-bt-vibrate']);
 	}
 
 })();
