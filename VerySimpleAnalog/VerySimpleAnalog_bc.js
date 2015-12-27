@@ -27,6 +27,7 @@ function getConfigData() {
 	var radioTapFlip = document.getElementById('radio-tap-flip');
 	var timeShift = document.getElementById('time-shift');
 	var toggleReversal = document.getElementById('toggle-reversal');
+	var toggleBTVibrate = document.getElementById('toggle-bt-vibrate');
 
 	var options = {
 		'radio-hand-diamond': radioHandDiamond.checked,
@@ -55,7 +56,8 @@ function getConfigData() {
 		'radio-tap-digital': radioTapDigital.checked,
 		'radio-tap-flip': radioTapFlip.checked,
 		'time-shift': timeShift.value,
-		'toggle-reversal': toggleReversal.checked
+		'toggle-reversal': toggleReversal.checked,
+		'toggle-bt-vibrate': toggleBTVibrate.checked
 	};
 
 	// Save for next launch
@@ -87,6 +89,7 @@ function getConfigData() {
 	localStorage['radio-tap-flip'] = options['radio-tap-flip'];
 	localStorage['time-shift'] = options['time-shift'];
 	localStorage['toggle-reversal'] = options['toggle-reversal'];
+	localStorage['toggle-bt-vibrate'] = options['toggle-bt-vibrate'];
 
 	console.log('Got options: ' + JSON.stringify(options));
 
@@ -166,6 +169,7 @@ buttonSave.addEventListener('click', function() {
 	var radioTapFlip = document.getElementById('radio-tap-flip');
 	var timeShift = document.getElementById('time-shift');
 	var toggleReversal = document.getElementById('toggle-reversal');
+	var toggleBTVibrate = document.getElementById('toggle-bt-vibrate');
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
@@ -196,6 +200,7 @@ buttonSave.addEventListener('click', function() {
 		radioTapFlip.checked = JSON.parse(localStorage['radio-tap-flip']);
 		timeShift.value = localStorage['time-shift'];
 		toggleReversal.checked = JSON.parse(localStorage['toggle-reversal']);
+		toggleBTVibrate.checked = JSON.parse(localStorage['toggle-bt-vibrate']);
 	}
 
 })();
