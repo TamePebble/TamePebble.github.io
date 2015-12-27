@@ -5,6 +5,7 @@ function getConfigData() {
 	var radioHandRectangle = document.getElementById('radio-hand-rectangle');
 	var radioHandPentagon = document.getElementById('radio-hand-pentagon');
 	var radioHandRound = document.getElementById('radio-hand-round');
+	var radioHandPentagon2 = document.getElementById('radio-hand-pentagon2');
 	var colorHourhand = document.getElementById('color-hourhand');
 	var colorHourhandOutline = document.getElementById('color-hourhand-outline');
 	var colorMinutehand = document.getElementById('color-minutehand');
@@ -26,6 +27,7 @@ function getConfigData() {
 	var radioTapFlip = document.getElementById('radio-tap-flip');
 	var timeShift = document.getElementById('time-shift');
 	var toggleReversal = document.getElementById('toggle-reversal');
+	var toggleBTVibrate = document.getElementById('toggle-bt-vibrate');
 
 	var options = {
 		'radio-hand-diamond': radioHandDiamond.checked,
@@ -33,6 +35,7 @@ function getConfigData() {
 		'radio-hand-rectangle': radioHandRectangle.checked,
 		'radio-hand-pentagon': radioHandPentagon.checked,
 		'radio-hand-round': radioHandRound.checked,
+		'radio-hand-pentagon2': radioHandPentagon2.checked,
 		'color-hourhand': colorHourhand.value,
 		'color-hourhand-outline': colorHourhandOutline.value,
 		'color-minutehand': colorMinutehand.value,
@@ -53,7 +56,8 @@ function getConfigData() {
 		'radio-tap-digital': radioTapDigital.checked,
 		'radio-tap-flip': radioTapFlip.checked,
 		'time-shift': timeShift.value,
-		'toggle-reversal': toggleReversal.checked
+		'toggle-reversal': toggleReversal.checked,
+		'toggle-bt-vibrate': toggleBTVibrate.checked
 	};
 
 	// Save for next launch
@@ -63,6 +67,7 @@ function getConfigData() {
 	localStorage['radio-hand-rectangle'] = options['radio-hand-rectangle'];
 	localStorage['radio-hand-pentagon'] = options['radio-hand-pentagon'];
 	localStorage['radio-hand-round'] = options['radio-hand-round'];
+	localStorage['radio-hand-pentagon2'] = options['radio-hand-pentagon2'];
 	localStorage['color-hourhand'] = options['color-hourhand'];
 	localStorage['color-hourhand-outline'] = options['color-hourhand-outline'];
 	localStorage['color-minutehand'] = options['color-minutehand'];
@@ -84,6 +89,7 @@ function getConfigData() {
 	localStorage['radio-tap-flip'] = options['radio-tap-flip'];
 	localStorage['time-shift'] = options['time-shift'];
 	localStorage['toggle-reversal'] = options['toggle-reversal'];
+	localStorage['toggle-bt-vibrate'] = options['toggle-bt-vibrate'];
 
 	console.log('Got options: ' + JSON.stringify(options));
 
@@ -141,6 +147,7 @@ buttonSave.addEventListener('click', function() {
 	var radioHandRectangle = document.getElementById('radio-hand-rectangle');
 	var radioHandPentagon = document.getElementById('radio-hand-pentagon');
 	var radioHandRound = document.getElementById('radio-hand-round');
+	var radioHandPentagon2 = document.getElementById('radio-hand-pentagon2');
 	var colorHourhand = document.getElementById('color-hourhand');
 	var colorHourhandOutline = document.getElementById('color-hourhand-outline');
 	var colorMinutehand = document.getElementById('color-minutehand');
@@ -162,6 +169,7 @@ buttonSave.addEventListener('click', function() {
 	var radioTapFlip = document.getElementById('radio-tap-flip');
 	var timeShift = document.getElementById('time-shift');
 	var toggleReversal = document.getElementById('toggle-reversal');
+	var toggleBTVibrate = document.getElementById('toggle-bt-vibrate');
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
@@ -170,6 +178,7 @@ buttonSave.addEventListener('click', function() {
 		radioHandRectangle.checked = JSON.parse(localStorage['radio-hand-rectangle']);
 		radioHandPentagon.checked = JSON.parse(localStorage['radio-hand-pentagon']);
 		radioHandRound.checked = JSON.parse(localStorage['radio-hand-round']);
+		radioHandPentagon2.checked = JSON.parse(localStorage['radio-hand-pentagon2']);
 		colorHourhand.value = localStorage['color-hourhand'];
 		colorHourhandOutline.value = localStorage['color-hourhand-outline'];
 		colorMinutehand.value = localStorage['color-minutehand'];
@@ -191,6 +200,7 @@ buttonSave.addEventListener('click', function() {
 		radioTapFlip.checked = JSON.parse(localStorage['radio-tap-flip']);
 		timeShift.value = localStorage['time-shift'];
 		toggleReversal.checked = JSON.parse(localStorage['toggle-reversal']);
+		localStorage['toggle-bt-vibrate'] = options['toggle-bt-vibrate'];
 	}
 
 })();
