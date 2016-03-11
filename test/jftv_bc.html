@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Japanese Fuzzy Time (Vertical) Configuration</title>
+		<link rel='stylesheet' type='text/css' href='../slate/css/slate.min.css'>
+		<script src='../slate/js/slate.min.js'></script>
+		<link rel='stylesheet' type='text/css' href='../css/tamegoro.css'>
+
+	</head>
+
+	<body>
+
+		<h1 class='title'>Japanese Fuzzy Time (Vertical)</h1>
+
+		<div class="item-container">
+			<div class="item-container-content">
+			</div>
+		</div>
+	
+		<form id="main-form">
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Text Colors
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						31 to 100% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-100" value="0xFFFFFF">
+					</label>
+					<label class="item">
+						11 to 30% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-30" value="0xFFFF00">
+					</label>
+					<label class="item">
+						0 to 10% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-10" value="0xFF0000">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Icons
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Battery charging
+						<input type="checkbox" class="item-toggle" id="toggle-icon-battery" checked>
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Vibration
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Connection lost
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-connection" checked>
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='button-container'>
+					<input id='button-cancel' type='button' class='item-button' value='CANCEL'>
+					<input id='button-save' type='button' class='item-button' value='SAVE'>
+				</div>
+
+			</div>
+
+		</form>
+	
+	</body>
+
+<script src='jftv_bc.js'></script>
+
+</html>
+
