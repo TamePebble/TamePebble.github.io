@@ -3,6 +3,7 @@ function getConfigData() {
 	var colorText100 = document.getElementById('color-text-100');
 	var colorText30 = document.getElementById('color-text-30');
 	var colorText10 = document.getElementById('color-text-10');
+	var colorBackground = document.getElementById('color-background');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
@@ -10,6 +11,7 @@ function getConfigData() {
 		'color-text-100': colorText100.value,
 		'color-text-30': colorText30.value,
 		'color-text-10': colorText10.value,
+		'color-background': colorBackground.value,
 		'toggle-icon-battery': toggleIconBattery.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked
 	};
@@ -19,6 +21,7 @@ function getConfigData() {
 	localStorage['color-text-100'] = options['color-text-100'];
 	localStorage['color-text-30'] = options['color-text-30'];
 	localStorage['color-text-10'] = options['color-text-10'];
+	localStorage['color-background'] = options['color-background'];
 	localStorage['toggle-icon-battery'] = options['toggle-icon-battery'];
 	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
 
@@ -76,6 +79,7 @@ buttonSave.addEventListener('click', function() {
 	var colorText100 = document.getElementById('color-text-100');
 	var colorText30 = document.getElementById('color-text-30');
 	var colorText10 = document.getElementById('color-text-10');
+	var colorBackground = document.getElementById('color-background');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
@@ -84,6 +88,7 @@ buttonSave.addEventListener('click', function() {
 		colorText100.value = localStorage['color-text-100'];
 		colorText30.value = localStorage['color-text-30'];
 		colorText10.value = localStorage['color-text-10'];
+		colorBackground.value = localStorage['color-background'];
 		toggleIconBattery.checked = JSON.parse(localStorage['toggle-icon-battery']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
 	}
