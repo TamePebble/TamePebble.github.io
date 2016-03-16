@@ -70,6 +70,7 @@ buttonSave.addEventListener('click', function() {
 
 (function() {
 
+
 	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
