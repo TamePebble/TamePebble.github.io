@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html>
 
+	<head>
+
+		<title>Japanese Fuzzy Time Configuration</title>
+		<link rel='stylesheet' type='text/css' href='../slate/css/slate.min.css'>
+		<script src='../slate/js/slate.min.js'></script>
+		<link rel='stylesheet' type='text/css' href='../css/tamegoro.css'>
+
+	</head>
+
+	<body>
+
+		<h1 class='title'>Japanese Fuzzy Time</h1>
+
+		<div class="item-container">
+			<div class="item-container-content">
+			</div>
+		</div>
+	
+		<form id="main-form">
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Color
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Invert
+						<input type="checkbox" class="item-toggle" id="toggle-invert">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Icon
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Battery Charging
+						<input type="checkbox" class="item-toggle" id="toggle-icon-battery" checked>
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Vibration
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Time Signal (dot dot dot...)
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-time-signal">
+					</label>
+					<label class="item">
+						Connection Lost (dash dot dot)
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-connection" checked>
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='button-container'>
+					<input id='button-cancel' type='button' class='item-button' value='CANCEL'>
+					<input id='button-save' type='button' class='item-button' value='SAVE'>
+				</div>
+
+			</div>
+
+		</form>
+	
+	</body>
+
+<script src='jftv_a.js'></script>
+
+</html>
