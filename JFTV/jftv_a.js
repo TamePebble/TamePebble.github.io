@@ -1,16 +1,37 @@
 function getConfigData() {
 
+	var radioFontShirousagi = document.getElementById('radio-font-shirousagi');
+	var radioFontJiyucho = document.getElementById('radio-font-jiyucho');
+	var radioFontMikachan = document.getElementById('radio-font-mikachan');
+	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
+	var radioFontHui = document.getElementById('radio-font-hui');
+	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
+	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
 	var options = {
+		'radio-font-shirousagi': radioFontShirousagi.checked,
+		'radio-font-jiyucho': radioFontJiyucho.checked,
+		'radio-font-mikachan': radioFontMikachan.checked,
+		'radio-font-puchikuma': radioFontPuchikuma.checked,
+		'radio-font-hui': radioFontHui.checked,
+		'toggle-invert': toggleInvert.checked,
 		'toggle-icon-battery': toggleIconBattery.checked,
+		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked
 	};
 
 	// Save for next launch
 	localStorage['flag_save'] = 1;
+	localStorage['radio-font-shirousagi'] = options['radio-font-shirousagi'];
+	localStorage['radio-font-jiyucho'] = options['radio-font-jiyucho'];
+	localStorage['radio-font-mikachan'] = options['radio-font-mikachan'];
+	localStorage['radio-font-puchikuma'] = options['radio-font-puchikuma'];
+	localStorage['radio-font-hui'] = options['radio-font-hui'];
+	localStorage['toggle-invert'] = options['toggle-invert'];
 	localStorage['toggle-icon-battery'] = options['toggle-icon-battery'];
+	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
 	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
 
 	console.log('Got options: ' + JSON.stringify(options));
@@ -64,14 +85,28 @@ buttonSave.addEventListener('click', function() {
 
 (function() {
 
+
+	var radioFontShirousagi = document.getElementById('radio-font-shirousagi');
+	var radioFontJiyucho = document.getElementById('radio-font-jiyucho');
+	var radioFontMikachan = document.getElementById('radio-font-mikachan');
+	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
+	var radioFontHui = document.getElementById('radio-font-hui');
+	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
+	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
+		radioFontShirousagi.checked = JSON.parse(localStorage['radio-font-shirousagi']);
+		radioFontJiyucho.checked = JSON.parse(localStorage['radio-font-jiyucho']);
+		radioFontMikachan.checked = JSON.parse(localStorage['radio-font-mikachan']);
+		radioFontPuchikuma.checked = JSON.parse(localStorage['radio-font-puchikuma']);
+		radioFontHui.checked = JSON.parse(localStorage['radio-font-hui']);
+		toggleInvert.checked = JSON.parse(localStorage['toggle-invert']);
 		toggleIconBattery.checked = JSON.parse(localStorage['toggle-icon-battery']);
+		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
 	}
 
 })();
-
