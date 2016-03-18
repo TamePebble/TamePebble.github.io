@@ -1,16 +1,22 @@
 function getConfigData() {
 
+	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
+	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
 	var options = {
+		'toggle-invert': toggleInvert.checked,
 		'toggle-icon-battery': toggleIconBattery.checked,
+		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked
 	};
 
 	// Save for next launch
 	localStorage['flag_save'] = 1;
+	localStorage['toggle-invert'] = options['toggle-invert'];
 	localStorage['toggle-icon-battery'] = options['toggle-icon-battery'];
+	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
 	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
 
 	console.log('Got options: ' + JSON.stringify(options));
@@ -64,14 +70,18 @@ buttonSave.addEventListener('click', function() {
 
 (function() {
 
+
+	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
+	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
+		toggleInvert.checked = JSON.parse(localStorage['toggle-invert']);
 		toggleIconBattery.checked = JSON.parse(localStorage['toggle-icon-battery']);
+		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
 	}
 
 })();
-
