@@ -5,6 +5,7 @@ function getConfigData() {
 	var colorText10 = document.getElementById('color-text-10');
 	var colorBackground = document.getElementById('color-background');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
+	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
 	var options = {
@@ -13,6 +14,7 @@ function getConfigData() {
 		'color-text-10': colorText10.value,
 		'color-background': colorBackground.value,
 		'toggle-icon-battery': toggleIconBattery.checked,
+		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked
 	};
 
@@ -23,6 +25,7 @@ function getConfigData() {
 	localStorage['color-text-10'] = options['color-text-10'];
 	localStorage['color-background'] = options['color-background'];
 	localStorage['toggle-icon-battery'] = options['toggle-icon-battery'];
+	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
 	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
 
 	console.log('Got options: ' + JSON.stringify(options));
@@ -81,6 +84,7 @@ buttonSave.addEventListener('click', function() {
 	var colorText10 = document.getElementById('color-text-10');
 	var colorBackground = document.getElementById('color-background');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
+	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
 	// Load any previously saved configuration, if available
@@ -90,8 +94,8 @@ buttonSave.addEventListener('click', function() {
 		colorText10.value = localStorage['color-text-10'];
 		colorBackground.value = localStorage['color-background'];
 		toggleIconBattery.checked = JSON.parse(localStorage['toggle-icon-battery']);
+		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
 	}
 
 })();
-
