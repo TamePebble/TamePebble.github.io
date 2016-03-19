@@ -5,7 +5,7 @@ function getConfigData() {
 	var radioFontMikachan = document.getElementById('radio-font-mikachan');
 	var radioFontKtegaki = document.getElementById('radio-font-ktegaki');
 	var radioFontHui = document.getElementById('radio-font-hui');
-	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
+//	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
 	var colorText100 = document.getElementById('color-text-100');
 	var colorText30 = document.getElementById('color-text-30');
 	var colorText10 = document.getElementById('color-text-10');
@@ -20,7 +20,7 @@ function getConfigData() {
 		'radio-font-mikachan': radioFontMikachan.checked,
 		'radio-font-ktegaki': radioFontKtegaki.checked,
 		'radio-font-hui': radioFontHui.checked,
-		'radio-font-puchikuma': radioFontPuchikuma.checked,
+//		'radio-font-puchikuma': radioFontPuchikuma.checked,
 		'color-text-100': colorText100.value,
 		'color-text-30': colorText30.value,
 		'color-text-10': colorText10.value,
@@ -37,7 +37,7 @@ function getConfigData() {
 	localStorage['radio-font-mikachan'] = options['radio-font-mikachan'];
 	localStorage['radio-font-ktegaki'] = options['radio-font-ktegaki'];
 	localStorage['radio-font-hui'] = options['radio-font-hui'];
-	localStorage['radio-font-puchikuma'] = options['radio-font-puchikuma'];
+//	localStorage['radio-font-puchikuma'] = options['radio-font-puchikuma'];
 	localStorage['color-text-100'] = options['color-text-100'];
 	localStorage['color-text-30'] = options['color-text-30'];
 	localStorage['color-text-10'] = options['color-text-10'];
@@ -102,7 +102,7 @@ buttonSave.addEventListener('click', function() {
 	var radioFontMikachan = document.getElementById('radio-font-mikachan');
 	var radioFontKtegaki = document.getElementById('radio-font-ktegaki');
 	var radioFontHui = document.getElementById('radio-font-hui');
-	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
+//	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
 	var colorText100 = document.getElementById('color-text-100');
 	var colorText30 = document.getElementById('color-text-30');
 	var colorText10 = document.getElementById('color-text-10');
@@ -118,7 +118,7 @@ buttonSave.addEventListener('click', function() {
 		radioFontMikachan.checked = JSON.parse(localStorage['radio-font-mikachan']);
 		radioFontKtegaki.checked = JSON.parse(localStorage['radio-font-puchikuma']);
 		radioFontHui.checked = JSON.parse(localStorage['radio-font-hui']);
-		radioFontPuchikuma.checked = JSON.parse(localStorage['radio-font-puchikuma']);
+//		radioFontPuchikuma.checked = JSON.parse(localStorage['radio-font-puchikuma']);
 		colorText100.value = localStorage['color-text-100'];
 		colorText30.value = localStorage['color-text-30'];
 		colorText10.value = localStorage['color-text-10'];

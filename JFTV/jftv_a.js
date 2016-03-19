@@ -5,7 +5,7 @@ function getConfigData() {
 	var radioFontMikachan = document.getElementById('radio-font-mikachan');
 	var radioFontKtegaki = document.getElementById('radio-font-ktegaki');
 	var radioFontHui = document.getElementById('radio-font-hui');
-	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
+//	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
 	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
@@ -17,7 +17,7 @@ function getConfigData() {
 		'radio-font-mikachan': radioFontMikachan.checked,
 		'radio-font-ktegaki': radioFontKtegaki.checked,
 		'radio-font-hui': radioFontHui.checked,
-		'radio-font-puchikuma': radioFontPuchikuma.checked,
+//		'radio-font-puchikuma': radioFontPuchikuma.checked,
 		'toggle-invert': toggleInvert.checked,
 		'toggle-icon-battery': toggleIconBattery.checked,
 		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
@@ -31,7 +31,7 @@ function getConfigData() {
 	localStorage['radio-font-mikachan'] = options['radio-font-mikachan'];
 	localStorage['radio-font-ktegaki'] = options['radio-font-ktegaki'];
 	localStorage['radio-font-hui'] = options['radio-font-hui'];
-	localStorage['radio-font-puchikuma'] = options['radio-font-puchikuma'];
+//	localStorage['radio-font-puchikuma'] = options['radio-font-puchikuma'];
 	localStorage['toggle-invert'] = options['toggle-invert'];
 	localStorage['toggle-icon-battery'] = options['toggle-icon-battery'];
 	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
@@ -94,7 +94,7 @@ buttonSave.addEventListener('click', function() {
 	var radioFontMikachan = document.getElementById('radio-font-mikachan');
 	var radioFontKtegaki = document.getElementById('radio-font-ktegaki');
 	var radioFontHui = document.getElementById('radio-font-hui');
-	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
+//	var radioFontPuchikuma = document.getElementById('radio-font-puchikuma');
 	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleIconBattery = document.getElementById('toggle-icon-battery');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
@@ -107,7 +107,7 @@ buttonSave.addEventListener('click', function() {
 		radioFontMikachan.checked = JSON.parse(localStorage['radio-font-ktegaki']);
 		radioFontKtegaki.checked = JSON.parse(localStorage['radio-font-puchikuma']);
 		radioFontHui.checked = JSON.parse(localStorage['radio-font-hui']);
-		radioFontPuchikuma.checked = JSON.parse(localStorage['radio-font-puchikuma']);
+//		radioFontPuchikuma.checked = JSON.parse(localStorage['radio-font-puchikuma']);
 		toggleInvert.checked = JSON.parse(localStorage['toggle-invert']);
 		toggleIconBattery.checked = JSON.parse(localStorage['toggle-icon-battery']);
 		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
