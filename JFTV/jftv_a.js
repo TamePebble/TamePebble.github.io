@@ -104,8 +104,8 @@ buttonSave.addEventListener('click', function() {
 	if(localStorage['flag_save'] == "1") {
 		radioFontShirousagi.checked = JSON.parse(localStorage['radio-font-shirousagi']);
 		radioFontJiyucho.checked = JSON.parse(localStorage['radio-font-jiyucho']);
-		radioFontMikachan.checked = JSON.parse(localStorage['radio-font-ktegaki']);
-		radioFontKtegaki.checked = JSON.parse(localStorage['radio-font-puchikuma']);
+		radioFontMikachan.checked = JSON.parse(localStorage['radio-font-mikachan']);
+		radioFontKtegaki.checked = JSON.parse(localStorage['radio-font-ktegaki']);
 		radioFontHui.checked = JSON.parse(localStorage['radio-font-hui']);
 //		radioFontPuchikuma.checked = JSON.parse(localStorage['radio-font-puchikuma']);
 		toggleInvert.checked = JSON.parse(localStorage['toggle-invert']);
