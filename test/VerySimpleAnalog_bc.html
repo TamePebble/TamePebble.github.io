@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Very Simple Analog Configuration</title>
+		<link rel='stylesheet' type='text/css' href='../slate/css/slate.min.css'>
+		<script src='../slate/js/slate.min.js'></script>
+		<link rel='stylesheet' type='text/css' href='../css/tamegoro.css'>
+
+	</head>
+
+	<body>
+
+		<h1 class='title'>Very Simple Analog</h1>
+
+		<div class="item-container">
+			<div class="item-container-content">
+			</div>
+		</div>
+	
+		<form id="main-form">
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Hand
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						<img src="hand_diamond.png">
+						<input type="radio" class="item-radio" id="radio-hand-diamond" name="groupe-radio-hand" checked>
+					</label>
+
+					<label class="item">
+						<img src="hand_trapezoid.png">
+						<input type="radio" class="item-radio" id="radio-hand-trapezoid" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_rectangle.png">
+						<input type="radio" class="item-radio" id="radio-hand-rectangle" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_pentagon.png">
+						<input type="radio" class="item-radio" id="radio-hand-pentagon" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_round.png">
+						<input type="radio" class="item-radio" id="radio-hand-round" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_arrow.png">
+						<input type="radio" class="item-radio" id="radio-hand-arrow" name="groupe-radio-hand">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+<!--
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Color
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						31 to 100% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-100" value="0xFFFFFF">
+					</label>
+					<label class="item">
+						11 to 30% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-30" value="0xFFFF00">
+					</label>
+					<label class="item">
+						0 to 10% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-10" value="0xFF0000">
+					</label>
+					<label class="item">
+						Background
+						<input type="text" class="item-color item-color-normal" id="color-background" value="0x000000">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Icon
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Battery charging
+						<input type="checkbox" class="item-toggle" id="toggle-icon-battery" checked>
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+-->
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Vibration
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Time Signal (dot dot dot...)
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-time-signal">
+					</label>
+					<label class="item">
+						Connection Lost (dash dot dot)
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-connection" checked>
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='button-container'>
+					<input id='button-cancel' type='button' class='item-button' value='CANCEL'>
+					<input id='button-save' type='button' class='item-button' value='SAVE'>
+				</div>
+
+			</div>
+
+		</form>
+	
+	</body>
+
+<script src='VerySimpleAnalog_bc.js'></script>
+
+</html>
+
