@@ -6,6 +6,11 @@ function getConfigData() {
 	var radioHandPentagon = document.getElementById('radio-hand-pentagon');
 	var radioHandRound = document.getElementById('radio-hand-round');
 	var radioHandArrow = document.getElementById('radio-hand-arrow');
+	var toggleItemSecondhand = document.getElementById('toggle-item-secondhand');
+	var toggleItemDate = document.getElementById('toggle-item-date');
+	var toggleItemNumber = document.getElementById('toggle-item-number');
+	var toggleItemIndex = document.getElementById('toggle-item-index');
+	var toggleItemShadow = document.getElementById('toggle-item-shadow');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
@@ -16,6 +21,11 @@ function getConfigData() {
 		'radio-hand-pentagon': radioHandPentagon.checked,
 		'radio-hand-round': radioHandRound.checked,
 		'radio-hand-arrow': radioHandArrow.checked,
+		'toggle-item-secondhand': toggleItemSecondhand.checked,
+		'toggle-item-date': toggleItemDate.checked,
+		'toggle-item-number': toggleItemNumber.checked,
+		'toggle-item-index': toggleItemIndex.checked,
+		'toggle-item-shadow': toggleItemShadow.checked,
 		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked
 	};
@@ -28,6 +38,11 @@ function getConfigData() {
 	localStorage['radio-hand-pentagon'] = options['radio-hand-pentagon'];
 	localStorage['radio-hand-round'] = options['radio-hand-round'];
 	localStorage['radio-hand-arrow'] = options['radio-hand-arrow'];
+	localStorage['toggle-item-secondhand'] = options['toggle-item-secondhand'];
+	localStorage['toggle-item-date'] = options['toggle-item-date'];
+	localStorage['toggle-item-number'] = options['toggle-item-number'];
+	localStorage['toggle-item-index'] = options['toggle-item-index'];
+	localStorage['toggle-item-shadow'] = options['toggle-item-shadow'];
 	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
 	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
 
@@ -89,6 +104,11 @@ buttonSave.addEventListener('click', function() {
 	var radioHandPentagon = document.getElementById('radio-hand-pentagon');
 	var radioHandRound = document.getElementById('radio-hand-round');
 	var radioHandArrow = document.getElementById('radio-hand-arrow');
+	var toggleItemSecondhand = document.getElementById('toggle-item-secondhand');
+	var toggleItemDate = document.getElementById('toggle-item-date');
+	var toggleItemNumber = document.getElementById('toggle-item-number');
+	var toggleItemIndex = document.getElementById('toggle-item-index');
+	var toggleItemShadow = document.getElementById('toggle-item-shadow');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
@@ -100,6 +120,11 @@ buttonSave.addEventListener('click', function() {
 		radioHandPentagon.checked = JSON.parse(localStorage['radio-hand-pentagon']);
 		radioHandRound.checked = JSON.parse(localStorage['radio-hand-round']);
 		radioHandArrow.checked = JSON.parse(localStorage['radio-hand-arrow']);
+		toggleItemSecondhand.checked = JSON.parse(localStorage['toggle-item-secondhand']);
+		toggleItemDate.checked = JSON.parse(localStorage['toggle-item-date']);
+		toggleItemNumber.checked = JSON.parse(localStorage['toggle-item-number']);
+		toggleItemIndex.checked = JSON.parse(localStorage['toggle-item-index']);
+		toggleItemShadow.checked = JSON.parse(localStorage['toggle-item-shadow']);
 		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
 	}
