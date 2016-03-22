@@ -24,7 +24,7 @@
 			<div class='item-container'>
 
 				<div class='item-container-header'>
-					Hands
+					Hand
 				</div>
 
 				<div class='item-container-content'>
@@ -40,13 +40,13 @@
 					</label>
 
 					<label class="item">
-						<img src="hand_pentagon.png">
-						<input type="radio" class="item-radio" id="radio-hand-pentagon" name="groupe-radio-hand">
+						<img src="hand_rectangle.png">
+						<input type="radio" class="item-radio" id="radio-hand-rectangle" name="groupe-radio-hand">
 					</label>
 
 					<label class="item">
-						<img src="hand_rectangle.png">
-						<input type="radio" class="item-radio" id="radio-hand-rectangle" name="groupe-radio-hand">
+						<img src="hand_pentagon.png">
+						<input type="radio" class="item-radio" id="radio-hand-pentagon" name="groupe-radio-hand">
 					</label>
 
 					<label class="item">
@@ -55,8 +55,8 @@
 					</label>
 
 					<label class="item">
-						<img src="hand_pentagon2.png">
-						<input type="radio" class="item-radio" id="radio-hand-pentagon2" name="groupe-radio-hand">
+						<img src="hand_arrow.png">
+						<input type="radio" class="item-radio" id="radio-hand-arrow" name="groupe-radio-hand">
 					</label>
 
 				</div>
@@ -66,6 +66,7 @@
 
 			</div>
 
+<!--
 			<div class='item-container'>
 
 				<div class='item-container-header'>
@@ -75,13 +76,20 @@
 				<div class='item-container-content'>
 
 					<label class="item">
-						Nomal
-						<input type="radio" class="item-radio" id="radio-nomal" name="groupe-radio-color" checked>
+						31 to 100% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-100" value="0xFFFFFF">
 					</label>
-
 					<label class="item">
-						Invert
-						<input type="radio" class="item-radio" id="radio-invert" name="groupe-radio-color">
+						11 to 30% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-30" value="0xFFFF00">
+					</label>
+					<label class="item">
+						0 to 10% remaining battery
+						<input type="text" class="item-color item-color-normal" id="color-text-10" value="0xFF0000">
+					</label>
+					<label class="item">
+						Background
+						<input type="text" class="item-color item-color-normal" id="color-background" value="0x000000">
 					</label>
 
 				</div>
@@ -94,29 +102,14 @@
 			<div class='item-container'>
 
 				<div class='item-container-header'>
-					Items
+					Icon
 				</div>
 
 				<div class='item-container-content'>
 
 					<label class="item">
-						Show secondhand
-						<input type="checkbox" class="item-toggle" id="toggle-show-secondhand" checked>
-					</label>
-
-					<label class="item">
-						Show date
-						<input type="checkbox" class="item-toggle" id="toggle-show-date" checked>
-					</label>
-
-					<label class="item">
-						Show number
-						<input type="checkbox" class="item-toggle" id="toggle-show-number" checked>
-					</label>
-
-					<label class="item">
-						Show index
-						<input type="checkbox" class="item-toggle" id="toggle-show-index" checked>
+						Battery charging
+						<input type="checkbox" class="item-toggle" id="toggle-icon-battery" checked>
 					</label>
 
 				</div>
@@ -125,29 +118,31 @@
 				</div>
 
 			</div>
-	
+-->
 
 			<div class='item-container'>
 
 				<div class='item-container-header'>
-					Tap
+					Item
 				</div>
 
 				<div class='item-container-content'>
 
 					<label class="item">
-						None
-						<input type="radio" class="item-radio" id="radio-tap-none" name="groupe-tap" checked>
+						Secondhand
+						<input type="checkbox" class="item-toggle" id="toggle-item-secondhand" checked>
 					</label>
-
 					<label class="item">
-						Show digital watch
-						<input type="radio" class="item-radio" id="radio-tap-digital" name="groupe-tap">
+						Date
+						<input type="checkbox" class="item-toggle" id="toggle-item-date" checked>
 					</label>
-
 					<label class="item">
-						Flip watchface
-						<input type="radio" class="item-radio" id="radio-tap-flip" name="groupe-tap">
+						Number
+						<input type="checkbox" class="item-toggle" id="toggle-item-number" checked>
+					</label>
+					<label class="item">
+						Index
+						<input type="checkbox" class="item-toggle" id="toggle-item-index" checked>
 					</label>
 
 				</div>
@@ -157,28 +152,21 @@
 
 			</div>
 
-
 			<div class='item-container'>
 
 				<div class='item-container-header'>
-					Options
+					Vibration
 				</div>
 
 				<div class='item-container-content'>
 
 					<label class="item">
-						Time shift
-						<input type="time" class="item-time" id="time-shift" value="00:00">
+						Time Signal (dot dot dot...)
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-time-signal">
 					</label>
-
 					<label class="item">
-						Reversal
-						<input type="checkbox" class="item-toggle" id="toggle-reversal">
-					</label>
-
-					<label class="item">
-						Vibrate(BT lost)
-						<input type="checkbox" class="item-toggle" id="toggle-bt-vibrate" checked>
+						Connection Lost (dash dot dot)
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-connection" checked>
 					</label>
 
 				</div>
