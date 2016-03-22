@@ -5,19 +5,14 @@ function getConfigData() {
 	var radioHandRectangle = document.getElementById('radio-hand-rectangle');
 	var radioHandPentagon = document.getElementById('radio-hand-pentagon');
 	var radioHandRound = document.getElementById('radio-hand-round');
-	var radioHandPentagon2 = document.getElementById('radio-hand-pentagon2');
-	var radioNomal = document.getElementById('radio-nomal');
-	var radioInvert = document.getElementById('radio-invert');
-	var toggleShowSecondhand = document.getElementById('toggle-show-secondhand');
-	var toggleShowDate = document.getElementById('toggle-show-date');
-	var toggleShowNumber = document.getElementById('toggle-show-number');
-	var toggleShowIndex = document.getElementById('toggle-show-index');
-	var radioTapNone = document.getElementById('radio-tap-none');
-	var radioTapDigital = document.getElementById('radio-tap-digital');
-	var radioTapFlip = document.getElementById('radio-tap-flip');
-	var timeShift = document.getElementById('time-shift');
-	var toggleReversal = document.getElementById('toggle-reversal');
-	var toggleBTVibrate = document.getElementById('toggle-bt-vibrate');
+	var radioHandArrow = document.getElementById('radio-hand-arrow');
+	var toggleInvert = document.getElementById('toggle-invert');
+	var toggleItemSecondhand = document.getElementById('toggle-item-secondhand');
+	var toggleItemDate = document.getElementById('toggle-item-date');
+	var toggleItemNumber = document.getElementById('toggle-item-number');
+	var toggleItemIndex = document.getElementById('toggle-item-index');
+	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
+	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
 	var options = {
 		'radio-hand-diamond': radioHandDiamond.checked,
@@ -25,19 +20,14 @@ function getConfigData() {
 		'radio-hand-rectangle': radioHandRectangle.checked,
 		'radio-hand-pentagon': radioHandPentagon.checked,
 		'radio-hand-round': radioHandRound.checked,
-		'radio-hand-pentagon2': radioHandPentagon2.checked,
-		'radio-nomal': radioNomal.checked,
-		'radio-invert': radioInvert.checked,
-		'toggle-show-secondhand': toggleShowSecondhand.checked,
-		'toggle-show-date': toggleShowDate.checked,
-		'toggle-show-number': toggleShowNumber.checked,
-		'toggle-show-index': toggleShowIndex.checked,
-		'radio-tap-none': radioTapNone.checked,
-		'radio-tap-digital': radioTapDigital.checked,
-		'radio-tap-flip': radioTapFlip.checked,
-		'time-shift': timeShift.value,
-		'toggle-reversal': toggleReversal.checked,
-		'toggle-bt-vibrate': toggleBTVibrate.checked
+		'radio-hand-arrow': radioHandArrow.checked,
+		'toggle-invert': toggleInvert.checked,
+		'toggle-item-secondhand': toggleItemSecondhand.checked,
+		'toggle-item-date': toggleItemDate.checked,
+		'toggle-item-number': toggleItemNumber.checked,
+		'toggle-item-index': toggleItemIndex.checked,
+		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
+		'toggle-vibration-connection': toggleVibrationConnection.checked
 	};
 
 	// Save for next launch
@@ -47,21 +37,16 @@ function getConfigData() {
 	localStorage['radio-hand-rectangle'] = options['radio-hand-rectangle'];
 	localStorage['radio-hand-pentagon'] = options['radio-hand-pentagon'];
 	localStorage['radio-hand-round'] = options['radio-hand-round'];
-	localStorage['radio-hand-pentagon2'] = options['radio-hand-pentagon2'];
-	localStorage['radio-nomal'] = options['radio-nomal'];
-	localStorage['radio-invert'] = options['radio-invert'];
-	localStorage['toggle-show-secondhand'] = options['toggle-show-secondhand'];
-	localStorage['toggle-show-date'] = options['toggle-show-date'];
-	localStorage['toggle-show-number'] = options['toggle-show-number'];
-	localStorage['toggle-show-index'] = options['toggle-show-index'];
-	localStorage['radio-tap-none'] = options['radio-tap-none'];
-	localStorage['radio-tap-digital'] = options['radio-tap-digital'];
-	localStorage['radio-tap-flip'] = options['radio-tap-flip'];
-	localStorage['time-shift'] = options['time-shift'];
-	localStorage['toggle-reversal'] = options['toggle-reversal'];
-	localStorage['toggle-bt-vibrate'] = options['toggle-bt-vibrate'];
+	localStorage['radio-hand-arrow'] = options['radio-hand-arrow'];
+	localStorage['toggle-invert'] = options['toggle-invert'];
+	localStorage['toggle-item-secondhand'] = options['toggle-item-secondhand'];
+	localStorage['toggle-item-date'] = options['toggle-item-date'];
+	localStorage['toggle-item-number'] = options['toggle-item-number'];
+	localStorage['toggle-item-index'] = options['toggle-item-index'];
+	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
+	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
 
-//	console.log('Got options: ' + JSON.stringify(options));
+	console.log('Got options: ' + JSON.stringify(options));
 
 	return options;
 
@@ -112,24 +97,20 @@ buttonSave.addEventListener('click', function() {
 
 (function() {
 
+
 	var radioHandDiamond = document.getElementById('radio-hand-diamond');
 	var radioHandTrapezoid = document.getElementById('radio-hand-trapezoid');
 	var radioHandRectangle = document.getElementById('radio-hand-rectangle');
 	var radioHandPentagon = document.getElementById('radio-hand-pentagon');
 	var radioHandRound = document.getElementById('radio-hand-round');
-	var radioHandPentagon2 = document.getElementById('radio-hand-pentagon2');
-	var radioNomal = document.getElementById('radio-nomal');
-	var radioInvert = document.getElementById('radio-invert');
-	var toggleShowSecondhand = document.getElementById('toggle-show-secondhand');
-	var toggleShowDate = document.getElementById('toggle-show-date');
-	var toggleShowNumber = document.getElementById('toggle-show-number');
-	var toggleShowIndex = document.getElementById('toggle-show-index');
-	var radioTapNone = document.getElementById('radio-tap-none');
-	var radioTapDigital = document.getElementById('radio-tap-digital');
-	var radioTapFlip = document.getElementById('radio-tap-flip');
-	var timeShift = document.getElementById('time-shift');
-	var toggleReversal = document.getElementById('toggle-reversal');
-	var toggleBTVibrate = document.getElementById('toggle-bt-vibrate');
+	var radioHandArrow = document.getElementById('radio-hand-arrow');
+	var toggleInvert = document.getElementById('toggle-invert');
+	var toggleItemSecondhand = document.getElementById('toggle-item-secondhand');
+	var toggleItemDate = document.getElementById('toggle-item-date');
+	var toggleItemNumber = document.getElementById('toggle-item-number');
+	var toggleItemIndex = document.getElementById('toggle-item-index');
+	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
+	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
@@ -138,20 +119,14 @@ buttonSave.addEventListener('click', function() {
 		radioHandRectangle.checked = JSON.parse(localStorage['radio-hand-rectangle']);
 		radioHandPentagon.checked = JSON.parse(localStorage['radio-hand-pentagon']);
 		radioHandRound.checked = JSON.parse(localStorage['radio-hand-round']);
-		radioHandPentagon2.checked = JSON.parse(localStorage['radio-hand-pentagon2']);
-		radioNomal.checked = JSON.parse(localStorage['radio-nomal']);
-		radioInvert.checked = JSON.parse(localStorage['radio-invert']);
-		toggleShowSecondhand.checked = JSON.parse(localStorage['toggle-show-secondhand']);
-		toggleShowDate.checked = JSON.parse(localStorage['toggle-show-date']);
-		toggleShowNumber.checked = JSON.parse(localStorage['toggle-show-number']);
-		toggleShowIndex.checked = JSON.parse(localStorage['toggle-show-index']);
-		radioTapNone.checked = JSON.parse(localStorage['radio-tap-none']);
-		radioTapDigital.checked = JSON.parse(localStorage['radio-tap-digital']);
-		radioTapFlip.checked = JSON.parse(localStorage['radio-tap-flip']);
-		timeShift.value = localStorage['time-shift'];
-		toggleReversal.checked = JSON.parse(localStorage['toggle-reversal']);
-		toggleBTVibrate.checked = JSON.parse(localStorage['toggle-bt-vibrate']);
+		radioHandArrow.checked = JSON.parse(localStorage['radio-hand-arrow']);
+		toggleInvert.checked = JSON.parse(localStorage['toggle-invert']);
+		toggleItemSecondhand.checked = JSON.parse(localStorage['toggle-item-secondhand']);
+		toggleItemDate.checked = JSON.parse(localStorage['toggle-item-date']);
+		toggleItemNumber.checked = JSON.parse(localStorage['toggle-item-number']);
+		toggleItemIndex.checked = JSON.parse(localStorage['toggle-item-index']);
+		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
+		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
 	}
 
 })();
-
