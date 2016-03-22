@@ -6,6 +6,7 @@ function getConfigData() {
 	var radioHandPentagon = document.getElementById('radio-hand-pentagon');
 	var radioHandRound = document.getElementById('radio-hand-round');
 	var radioHandArrow = document.getElementById('radio-hand-arrow');
+	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleItemSecondhand = document.getElementById('toggle-item-secondhand');
 	var toggleItemDate = document.getElementById('toggle-item-date');
 	var toggleItemNumber = document.getElementById('toggle-item-number');
@@ -20,6 +21,7 @@ function getConfigData() {
 		'radio-hand-pentagon': radioHandPentagon.checked,
 		'radio-hand-round': radioHandRound.checked,
 		'radio-hand-arrow': radioHandArrow.checked,
+		'toggle-invert': toggleInvert.checked,
 		'toggle-item-secondhand': toggleItemSecondhand.checked,
 		'toggle-item-date': toggleItemDate.checked,
 		'toggle-item-number': toggleItemNumber.checked,
@@ -36,6 +38,7 @@ function getConfigData() {
 	localStorage['radio-hand-pentagon'] = options['radio-hand-pentagon'];
 	localStorage['radio-hand-round'] = options['radio-hand-round'];
 	localStorage['radio-hand-arrow'] = options['radio-hand-arrow'];
+	localStorage['toggle-invert'] = options['toggle-invert'];
 	localStorage['toggle-item-secondhand'] = options['toggle-item-secondhand'];
 	localStorage['toggle-item-date'] = options['toggle-item-date'];
 	localStorage['toggle-item-number'] = options['toggle-item-number'];
@@ -101,6 +104,7 @@ buttonSave.addEventListener('click', function() {
 	var radioHandPentagon = document.getElementById('radio-hand-pentagon');
 	var radioHandRound = document.getElementById('radio-hand-round');
 	var radioHandArrow = document.getElementById('radio-hand-arrow');
+	var toggleInvert = document.getElementById('toggle-invert');
 	var toggleItemSecondhand = document.getElementById('toggle-item-secondhand');
 	var toggleItemDate = document.getElementById('toggle-item-date');
 	var toggleItemNumber = document.getElementById('toggle-item-number');
@@ -116,6 +120,7 @@ buttonSave.addEventListener('click', function() {
 		radioHandPentagon.checked = JSON.parse(localStorage['radio-hand-pentagon']);
 		radioHandRound.checked = JSON.parse(localStorage['radio-hand-round']);
 		radioHandArrow.checked = JSON.parse(localStorage['radio-hand-arrow']);
+		toggleInvert.checked = JSON.parse(localStorage['toggle-invert']);
 		toggleItemSecondhand.checked = JSON.parse(localStorage['toggle-item-secondhand']);
 		toggleItemDate.checked = JSON.parse(localStorage['toggle-item-date']);
 		toggleItemNumber.checked = JSON.parse(localStorage['toggle-item-number']);
