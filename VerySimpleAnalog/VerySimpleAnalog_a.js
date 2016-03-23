@@ -13,6 +13,7 @@ function getConfigData() {
 	var toggleItemIndex = document.getElementById('toggle-item-index');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
+	var sliderTimeShift = document.getElementById('slider-time-shift');
 	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
 	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
 
@@ -30,6 +31,7 @@ function getConfigData() {
 		'toggle-item-index': toggleItemIndex.checked,
 		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked,
+		'slider-time-shift': sliderTimeShift.value,
 		'radio-1stday-sunday': radio1stdaySunday.checked,
 		'radio-1stday-monday': radio1stdayMonday.checked
 	};
@@ -49,6 +51,7 @@ function getConfigData() {
 	localStorage['toggle-item-index'] = options['toggle-item-index'];
 	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
 	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
+	localStorage['slider-time-shift'] = options['slider-time-shift'];
 	localStorage['radio-1stday-sunday'] = options['radio-1stday-sunday'];
 	localStorage['radio-1stday-monday'] = options['radio-1stday-monday'];
 
@@ -103,7 +106,6 @@ buttonSave.addEventListener('click', function() {
 
 (function() {
 
-
 	var radioHandDiamond = document.getElementById('radio-hand-diamond');
 	var radioHandTrapezoid = document.getElementById('radio-hand-trapezoid');
 	var radioHandRectangle = document.getElementById('radio-hand-rectangle');
@@ -117,6 +119,7 @@ buttonSave.addEventListener('click', function() {
 	var toggleItemIndex = document.getElementById('toggle-item-index');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
+	var sliderTimeShift = document.getElementById('slider-time-shift');
 	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
 	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
 
@@ -135,6 +138,7 @@ buttonSave.addEventListener('click', function() {
 		toggleItemIndex.checked = JSON.parse(localStorage['toggle-item-index']);
 		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
+		sliderTimeShift.value = JSON.parse(localStorage['slider-time-shift']);
 		radio1stdaySunday.checked = JSON.parse(localStorage['radio-1stday-sunday']);
 		radio1stdayMonday.checked = JSON.parse(localStorage['radio-1stday-monday']);
 	}
