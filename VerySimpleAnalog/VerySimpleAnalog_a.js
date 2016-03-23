@@ -31,7 +31,7 @@ function getConfigData() {
 		'toggle-item-index': toggleItemIndex.checked,
 		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked,
-		'slider-time-shift': sliderTimeShift.text,
+		'slider-time-shift': sliderTimeShift.value,
 		'radio-1stday-sunday': radio1stdaySunday.checked,
 		'radio-1stday-monday': radio1stdayMonday.checked
 	};
@@ -138,7 +138,7 @@ buttonSave.addEventListener('click', function() {
 		toggleItemIndex.checked = JSON.parse(localStorage['toggle-item-index']);
 		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
-		sliderTimeShift.text = JSON.parse(localStorage['slider-time-shift']);
+		sliderTimeShift.value = JSON.parse(localStorage['slider-time-shift']);
 		radio1stdaySunday.checked = JSON.parse(localStorage['radio-1stday-sunday']);
 		radio1stdayMonday.checked = JSON.parse(localStorage['radio-1stday-monday']);
 	}
