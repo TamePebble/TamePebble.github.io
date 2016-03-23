@@ -13,7 +13,7 @@ function getConfigData() {
 	var toggleItemIndex = document.getElementById('toggle-item-index');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
-	var timeTimeShift = document.getElementById('slider-1');
+	var sliderTimeShift = document.getElementById('slider-1');
 	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
 	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
 
