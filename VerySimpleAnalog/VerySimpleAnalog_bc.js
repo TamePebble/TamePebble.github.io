@@ -24,6 +24,8 @@ function getConfigData() {
 	var toggleItemShadow = document.getElementById('toggle-item-shadow');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
+	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
+	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
 
 	var options = {
 		'radio-hand-diamond': radioHandDiamond.checked,
@@ -49,7 +51,9 @@ function getConfigData() {
 		'toggle-item-index': toggleItemIndex.checked,
 		'toggle-item-shadow': toggleItemShadow.checked,
 		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
-		'toggle-vibration-connection': toggleVibrationConnection.checked
+		'toggle-vibration-connection': toggleVibrationConnection.checked,
+		'radio-1stday-sunday': radio1stdaySunday.checked,
+		'radio-1stday-monday': radio1stdayMonday.checked
 	};
 
 	// Save for next launch
@@ -78,6 +82,8 @@ function getConfigData() {
 	localStorage['toggle-item-shadow'] = options['toggle-item-shadow'];
 	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
 	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
+	localStorage['radio-1stday-sunday'] = options['radio-1stday-sunday'];
+	localStorage['radio-1stday-monday'] = options['radio-1stday-monday'];
 
 	console.log('Got options: ' + JSON.stringify(options));
 
@@ -155,6 +161,8 @@ buttonSave.addEventListener('click', function() {
 	var toggleItemShadow = document.getElementById('toggle-item-shadow');
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
+	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
+	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
 
 	// Load any previously saved configuration, if available
 	if(localStorage['flag_save'] == "1") {
@@ -182,6 +190,8 @@ buttonSave.addEventListener('click', function() {
 		toggleItemShadow.checked = JSON.parse(localStorage['toggle-item-shadow']);
 		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
+		radio1stdaySunday.checked = JSON.parse(localStorage['radio-1stday-sunday']);
+		radio1stdayMonday.checked = JSON.parse(localStorage['radio-1stday-monday']);
 	}
 
 })();
