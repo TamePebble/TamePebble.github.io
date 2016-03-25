@@ -14,8 +14,8 @@ function getConfigData() {
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 	var radioTapNone = document.getElementById('radio-tap-none');
-	var radioTap5s = document.getElementById('radio-tap-5s');
-	var radioTap10s = document.getElementById('radio-tap-10s');
+	var radioTapC5 = document.getElementById('radio-tap-c5');
+	var radioTapC10 = document.getElementById('radio-tap-c10');
 	var timeShift = document.getElementById('time-shift');
 	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
 	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
@@ -35,8 +35,8 @@ function getConfigData() {
 		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked,
 		'radioradio-tap-none': radioTapNone.checked,
-		'radioradio-tap-5s': radioTap5s.checked,
-		'radioradio-tap-10s': radioTap10s.checked,
+		'radioradio-tap-c5': radioTapC5.checked,
+		'radioradio-tap-c10': radioTapC10.checked,
 		'time-shift': timeShift.value,
 		'radio-1stday-sunday': radio1stdaySunday.checked,
 		'radio-1stday-monday': radio1stdayMonday.checked
@@ -58,8 +58,8 @@ function getConfigData() {
 	localStorage['toggle-vibration-time-signal'] = options['toggle-vibration-time-signal'];
 	localStorage['toggle-vibration-connection'] = options['toggle-vibration-connection'];
 	localStorage['radio-tap-none'] = options['radio-tap-none'];
-	localStorage['radio-tap-5s'] = options['radio-tap-5s'];
-	localStorage['radio-tap-10s'] = options['radio-tap-10s'];
+	localStorage['radio-tap-c5'] = options['radio-tap-c5'];
+	localStorage['radio-tap-c10'] = options['radio-tap-c10'];
 	localStorage['time-shift'] = options['time-shift'];
 	localStorage['radio-1stday-sunday'] = options['radio-1stday-sunday'];
 	localStorage['radio-1stday-monday'] = options['radio-1stday-monday'];
@@ -129,8 +129,8 @@ buttonSave.addEventListener('click', function() {
 	var toggleVibrationTimeSignal = document.getElementById('toggle-vibration-time-signal');
 	var toggleVibrationConnection = document.getElementById('toggle-vibration-connection');
 	var radioTapNone = document.getElementById('radio-tap-none');
-	var radioTap5s = document.getElementById('radio-tap-5s');
-	var radioTap10s = document.getElementById('radio-tap-10s');
+	var radioTapC5 = document.getElementById('radio-tap-c5');
+	var radioTapC10 = document.getElementById('radio-tap-c10');
 	var timeShift = document.getElementById('time-shift');
 	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
 	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
@@ -151,8 +151,8 @@ buttonSave.addEventListener('click', function() {
 		toggleVibrationTimeSignal.checked = JSON.parse(localStorage['toggle-vibration-time-signal']);
 		toggleVibrationConnection.checked = JSON.parse(localStorage['toggle-vibration-connection']);
 		radioTapNone.checked = JSON.parse(localStorage['radio-tap-none']);
-		radioTap5s.checked = JSON.parse(localStorage['radio-tap-5s']);
-		radioTap10s.checked = JSON.parse(localStorage['radio-tap-10']);
+		radioTapC5.checked = JSON.parse(localStorage['radio-tap-c5']);
+		radioTapC10.checked = JSON.parse(localStorage['radio-tap-c10']);
 		timeShift.value = localStorage['time-shift'];
 		radio1stdaySunday.checked = JSON.parse(localStorage['radio-1stday-sunday']);
 		radio1stdayMonday.checked = JSON.parse(localStorage['radio-1stday-monday']);
