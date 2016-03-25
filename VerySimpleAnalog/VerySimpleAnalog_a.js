@@ -16,7 +16,7 @@ function getConfigData() {
 	var radioTapNone = document.getElementById('radio-tap-none');
 	var radioTapC5 = document.getElementById('radio-tap-c5');
 	var radioTapC10 = document.getElementById('radio-tap-c10');
-	var sliderTimeShift = document.getElementById('slider-time-shift');
+	var sliderTimeShiftSlider = document.getElementById('slider-time-shift-slider');
 	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
 	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
 
@@ -37,7 +37,7 @@ function getConfigData() {
 		'radio-tap-none': radioTapNone.checked,
 		'radio-tap-c5': radioTapC5.checked,
 		'radio-tap-c10': radioTapC10.checked,
-		'slider-time-shift': sliderTimeShift.value,
+		'slider-time-shift-slider': sliderTimeShiftSlider.value,
 		'radio-1stday-sunday': radio1stdaySunday.checked,
 		'radio-1stday-monday': radio1stdayMonday.checked
 	};
@@ -60,7 +60,7 @@ function getConfigData() {
 	localStorage['radio-tap-none'] = options['radio-tap-none'];
 	localStorage['radio-tap-c5'] = options['radio-tap-c5'];
 	localStorage['radio-tap-c10'] = options['radio-tap-c10'];
-	localStorage['slider-time-shift'] = options['slider-time-shift'];
+	localStorage['slider-time-shift-slider'] = options['slider-time-shift-slider'];
 	localStorage['radio-1stday-sunday'] = options['radio-1stday-sunday'];
 	localStorage['radio-1stday-monday'] = options['radio-1stday-monday'];
 
@@ -131,7 +131,8 @@ buttonSave.addEventListener('click', function() {
 	var radioTapNone = document.getElementById('radio-tap-none');
 	var radioTapC5 = document.getElementById('radio-tap-c5');
 	var radioTapC10 = document.getElementById('radio-tap-c10');
-	var sliderTimeShift = document.getElementById('slider-time-shift');
+	var sliderTimeShiftSlider = document.getElementById('slider-time-shift-slider');
+	var sliderTimeShiftText = document.getElementById('slider-time-shift-text');
 	var radio1stdaySunday = document.getElementById('radio-1stday-sunday');
 	var radio1stdayMonday = document.getElementById('radio-1stday-monday');
 
@@ -153,7 +154,8 @@ buttonSave.addEventListener('click', function() {
 		radioTapNone.checked = JSON.parse(localStorage['radio-tap-none']);
 		radioTapC5.checked = JSON.parse(localStorage['radio-tap-c5']);
 		radioTapC10.checked = JSON.parse(localStorage['radio-tap-c10']);
-		sliderTimeShift.value = localStorage['slider-time-shift'];
+		sliderTimeShiftSlider.value = localStorage['slider-time-shift-slider'];
+		sliderTimeShiftText.value = localStorage['slider-time-shift-slider'];
 		radio1stdaySunday.checked = JSON.parse(localStorage['radio-1stday-sunday']);
 		radio1stdayMonday.checked = JSON.parse(localStorage['radio-1stday-monday']);
 	}
