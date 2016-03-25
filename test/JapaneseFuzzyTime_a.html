@@ -3,7 +3,7 @@
 
 	<head>
 
-		<title>Japanese Fuzzy Time Configuration</title>
+		<title>Very Simple Analog Configuration</title>
 		<link rel='stylesheet' type='text/css' href='../slate/css/slate.min.css'>
 		<script src='../slate/js/slate.min.js'></script>
 		<link rel='stylesheet' type='text/css' href='../css/tamegoro.css'>
@@ -12,7 +12,7 @@
 
 	<body>
 
-		<h1 class='title'>Japanese Fuzzy Time</h1>
+		<h1 class='title'>Very Simple Analog</h1>
 
 		<div class="item-container">
 			<div class="item-container-content">
@@ -20,6 +20,51 @@
 		</div>
 	
 		<form id="main-form">
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Hand
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						<img src="hand_diamond.png">
+						<input type="radio" class="item-radio" id="radio-hand-diamond" name="groupe-radio-hand" checked>
+					</label>
+
+					<label class="item">
+						<img src="hand_trapezoid.png">
+						<input type="radio" class="item-radio" id="radio-hand-trapezoid" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_rectangle.png">
+						<input type="radio" class="item-radio" id="radio-hand-rectangle" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_pentagon.png">
+						<input type="radio" class="item-radio" id="radio-hand-pentagon" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_round.png">
+						<input type="radio" class="item-radio" id="radio-hand-round" name="groupe-radio-hand">
+					</label>
+
+					<label class="item">
+						<img src="hand_arrow.png">
+						<input type="radio" class="item-radio" id="radio-hand-arrow" name="groupe-radio-hand">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
 
 			<div class='item-container'>
 
@@ -44,14 +89,26 @@
 			<div class='item-container'>
 
 				<div class='item-container-header'>
-					Icon
+					Item
 				</div>
 
 				<div class='item-container-content'>
 
 					<label class="item">
-						Battery charging
-						<input type="checkbox" class="item-toggle" id="toggle-icon-battery" checked>
+						Second Hand
+						<input type="checkbox" class="item-toggle" id="toggle-item-secondhand" checked>
+					</label>
+					<label class="item">
+						Date
+						<input type="checkbox" class="item-toggle" id="toggle-item-date" checked>
+					</label>
+					<label class="item">
+						Number
+						<input type="checkbox" class="item-toggle" id="toggle-item-number" checked>
+					</label>
+					<label class="item">
+						Index
+						<input type="checkbox" class="item-toggle" id="toggle-item-index" checked>
 					</label>
 
 				</div>
@@ -87,6 +144,77 @@
 
 			<div class='item-container'>
 
+				<div class='item-container-header'>
+					Tap
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						None
+						<input type="radio" class="item-radio" id="radio-tap-none" name="groupe-radio-tap">
+					</label>
+					<label class="item">
+						Show Calendar 5 Seconds
+						<input type="radio" class="item-radio" id="radio-tap-c5" name="groupe-radio-tap" checked>
+					</label>
+					<label class="item">
+						Show Calendar 10 Seconds
+						<input type="radio" class="item-radio" id="radio-tap-c10" name="groupe-radio-tap">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					First Day of the Week
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Sunday
+						<input type="radio" class="item-radio" id="radio-1stday-sunday" name="groupe-radio-1stday" checked>
+					</label>
+
+					<label class="item">
+						Monday
+						<input type="radio" class="item-radio" id="radio-1stday-monday" name="groupe-radio-1stday">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Time Shift
+				</div>
+
+				<div class='item-container-content'>
+					<label class="item">
+						+[HH:MM]
+						<input type="time" class="item-time" id="time-shift" value="00:00">
+					</label>
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
 				<div class='button-container'>
 					<input id='button-cancel' type='button' class='item-button' value='CANCEL'>
 					<input id='button-save' type='button' class='item-button' value='SAVE'>
@@ -98,6 +226,7 @@
 	
 	</body>
 
-<script src='JapaneseFuzzyTime_a.js'></script>
+<script src='VerySimpleAnalog_a.js'></script>
 
 </html>
+
