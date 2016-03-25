@@ -56,9 +56,9 @@ function getConfigData() {
 		'toggle-item-shadow': toggleItemShadow.checked,
 		'toggle-vibration-time-signal': toggleVibrationTimeSignal.checked,
 		'toggle-vibration-connection': toggleVibrationConnection.checked,
-		'radioradio-tap-none': radioTapNone.checked,
-		'radioradio-tap-c5': radioTapC5.checked,
-		'radioradio-tap-c10': radioTapC10.checked,
+		'radio-tap-none': radioTapNone.checked,
+		'radio-tap-c5': radioTapC5.checked,
+		'radio-tap-c10': radioTapC10.checked,
 		'time-shift': timeShift.value,
 		'radio-1stday-sunday': radio1stdaySunday.checked,
 		'radio-1stday-monday': radio1stdayMonday.checked
