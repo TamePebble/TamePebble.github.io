@@ -12,9 +12,9 @@ function getConfigData() {
 	var select_2nd_half_30 = document.getElementById('select-2nd-half-30');
 	var select_2nd_half_40 = document.getElementById('select-2nd-half-40');
 	var select_2nd_half_45 = document.getElementById('select-2nd-half-45');
-	var select_Interval_5 = document.getElementById('select-Interval-5');
-	var select_Interval_10 = document.getElementById('select-Interval-10');
-	var select_Interval_15 = document.getElementById('select-Interval-15');
+	var select_Interval_5 = document.getElementById('select-interval-5');
+	var select_Interval_10 = document.getElementById('select-interval-10');
+	var select_Interval_15 = document.getElementById('select-interval-15');
 	var select_extra_1st_half_5 = document.getElementById('select-extra-1st-half-5');
 	var select_extra_1st_half_10 = document.getElementById('select-extra-1st-half-10');
 	var select_extra_1st_half_15 = document.getElementById('select-extra-1st-half-15');
@@ -41,9 +41,9 @@ function getConfigData() {
 		'select-2nd-half-30': select_2nd_half_30.selected,
 		'select-2nd-half-40': select_2nd_half_40.selected,
 		'select-2nd-half-45': select_2nd_half_45.selected,
-		'select-Interval-5': select_Interval_5.selected,
-		'select-Interval-10': select_Interval_10.selected,
-		'select-Interval-15': select_Interval_15.selected,
+		'select-interval-5': select_Interval_5.selected,
+		'select-interval-10': select_Interval_10.selected,
+		'select-interval-15': select_Interval_15.selected,
 		'select-extra-1st-half-5': select_extra_1st_half_5.selected,
 		'select-extra-1st-half-10': select_extra_1st_half_10.selected,
 		'select-extra-1st-half-15': select_extra_1st_half_15.selected,
@@ -72,9 +72,9 @@ function getConfigData() {
 	localStorage['select-2nd-half-30'] = options['select-2nd-half-30'];
 	localStorage['select-2nd-half-40'] = options['select-2nd-half-40'];
 	localStorage['select-2nd-half-45'] = options['select-2nd-half-45'];
-	localStorage['select-Interval-5'] = options['select-Interval-5'];
-	localStorage['select-Interval-10'] = options['select-Interval-10'];
-	localStorage['select-Interval-15'] = options['select-Interval-15'];
+	localStorage['select-interval-5'] = options['select-interval-5'];
+	localStorage['select-interval-10'] = options['select-interval-10'];
+	localStorage['select-interval-15'] = options['select-interval-15'];
 	localStorage['select-extra-1st-half-5'] = options['select-extra-1st-half-5'];
 	localStorage['select-extra-1st-half-10'] = options['select-extra-1st-half-10'];
 	localStorage['select-extra-1st-half-15'] = options['select-extra-1st-half-15'];
@@ -151,9 +151,9 @@ buttonSave.addEventListener('click', function() {
 	var select_2nd_half_30 = document.getElementById('select-2nd-half-30');
 	var select_2nd_half_40 = document.getElementById('select-2nd-half-40');
 	var select_2nd_half_45 = document.getElementById('select-2nd-half-45');
-	var select_Interval_5 = document.getElementById('select-Interval-5');
-	var select_Interval_10 = document.getElementById('select-Interval-10');
-	var select_Interval_15 = document.getElementById('select-Interval-15');
+	var select_Interval_5 = document.getElementById('select-interval-5');
+	var select_Interval_10 = document.getElementById('select-interval-10');
+	var select_Interval_15 = document.getElementById('select-interval-15');
 	var select_extra_1st_half_5 = document.getElementById('select-extra-1st-half-5');
 	var select_extra_1st_half_10 = document.getElementById('select-extra-1st-half-10');
 	var select_extra_1st_half_15 = document.getElementById('select-extra-1st-half-15');
@@ -181,9 +181,9 @@ buttonSave.addEventListener('click', function() {
 		select_2nd_half_30.selected = JSON.parse(localStorage['select-2nd-half-30']);
 		select_2nd_half_40.selected = JSON.parse(localStorage['select-2nd-half-40']);
 		select_2nd_half_45.selected = JSON.parse(localStorage['select-2nd-half-45']);
-		select_Interval_5.selected = JSON.parse(localStorage['select-Interval-5']);
-		select_Interval_10.selected = JSON.parse(localStorage['select-Interval-10']);
-		select_Interval_15.selected = JSON.parse(localStorage['select-Interval-15']);
+		select_Interval_5.selected = JSON.parse(localStorage['select-interval-5']);
+		select_Interval_10.selected = JSON.parse(localStorage['select-interval-10']);
+		select_Interval_15.selected = JSON.parse(localStorage['select-interval-15']);
 		select_extra_1st_half_5.selected = JSON.parse(localStorage['select-extra-1st-half-5']);
 		select_extra_1st_half_10.selected = JSON.parse(localStorage['select-extra-1st-half-10']);
 		select_extra_1st_half_15.selected = JSON.parse(localStorage['select-extra-1st-half-15']);
