@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Football Referee Watch Configuration</title>
+		<link rel='stylesheet' type='text/css' href='../slate/css/slate.min.css'>
+		<script src='../slate/js/slate.min.js'></script>
+		<link rel='stylesheet' type='text/css' href='../css/tamegoro.css'>
+
+	</head>
+
+	<body>
+
+		<h1 class='title'>Football Referee Watch</h1>
+
+		<div class="item-container">
+			<div class="item-container-content">
+			</div>
+		</div>
+	
+		<form id="main-form">
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Color
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Invert
+						<input type="checkbox" class="item-toggle" id="toggle-invert">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Period
+				</div>
+
+				<div class='item-container-content'>
+
+				<label class="item">
+					1st Half
+					<select name="select-1st-half" class="item-select">
+						<option class="item-select-option" id="select-1st-half-20">20</option>
+						<option class="item-select-option" id="select-1st-half-30">30</option>
+						<option class="item-select-option" id="select-1st-half-40">40</option>
+						<option class="item-select-option" id="select-1st-half-45" selected>45</option>
+					</select>
+				</label>
+
+				<label class="item">
+					Half Time
+					<select name="select-half-time" class="item-select">
+						<option class="item-select-option" id="select-half-time-5">5</option>
+						<option class="item-select-option" id="select-half-time-10">10</option>
+						<option class="item-select-option" id="select-half-time-15" selected>15</option>
+					</select>
+				</label>
+
+				<label class="item">
+					2nd Half
+					<select name="select-2nd-half" class="item-select">
+						<option class="item-select-option" id="select-2nd-half-20">20</option>
+						<option class="item-select-option" id="select-2nd-half-30">30</option>
+						<option class="item-select-option" id="select-2nd-half-40">40</option>
+						<option class="item-select-option" id="select-2nd-half-45" selected>45</option>
+					</select>
+				</label>
+
+				<label class="item">
+					Interval Before Extra Game
+					<select name="select-interval" class="item-select">
+						<option class="item-select-option" id="select-interval-5" selected>5</option>
+						<option class="item-select-option" id="select-interval-10">10</option>
+						<option class="item-select-option" id="select-interval-15">15</option>
+					</select>
+				</label>
+
+				<label class="item">
+					Extra 1st Half
+					<select name="select-extra-1st-half" class="item-select">
+						<option class="item-select-option" id="select-extra-1st-half-5">5</option>
+						<option class="item-select-option" id="select-extra-1st-half-10">10</option>
+						<option class="item-select-option" id="select-extra-1st-half-15" selected>15</option>
+					</select>
+				</label>
+
+				<label class="item">
+					Extra 2nd Half
+					<select name="select-extra-2nd-half" class="item-select">
+						<option class="item-select-option" id="select-extra-2nd-half-5">5</option>
+						<option class="item-select-option" id="select-extra-2nd-half-10">10</option>
+						<option class="item-select-option" id="select-extra-2nd-half-15" selected>15</option>
+					</select>
+				</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Play Time Alert (Vibration)
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Last 1 Minute
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-play-time-1min" checked>
+					</label>
+					<label class="item">
+						Last 10 Seconds
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-play-time-10sec" checked>
+					</label>
+					<label class="item">
+						Time Up
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-play-time-just">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='item-container-header'>
+					Elapsed Time Alert (Vibration)
+				</div>
+
+				<div class='item-container-content'>
+
+					<label class="item">
+						Last 1 Minute
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-elapsed-time-1min" checked>
+					</label>
+					<label class="item">
+						Last 10 Seconds
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-elapsed-time-10sec" checked>
+					</label>
+					<label class="item">
+						Time Up
+						<input type="checkbox" class="item-toggle" id="toggle-vibration-elapsed-time-just">
+					</label>
+
+				</div>
+
+				<div class='item-container-footer'>
+				</div>
+
+			</div>
+
+			<div class='item-container'>
+
+				<div class='button-container'>
+					<input id='button-cancel' type='button' class='item-button' value='CANCEL'>
+					<input id='button-save' type='button' class='item-button' value='SAVE'>
+				</div>
+
+			</div>
+
+		</form>
+	
+	</body>
+
+<script src='FootballRefereeWatch.js'></script>
+
+</html>
